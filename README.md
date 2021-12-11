@@ -4,6 +4,26 @@ Rendering a Qubit (visual representation of it), using TypeScript and other stuf
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features
+
+- Make qubit  from this
+https://docs.microsoft.com/en-us/azure/quantum/tutorial-qdk-explore-entanglement
+
+## TODO
+
+- Mock quantum state by range of number
+	- Randomize index of array for ‘up’ and ‘down’ values
+- Just render text of `up` and `down` for the moment
+- Make this percentage of time
+- 0. Render state of `up` or `down` depending of its percentage (bias)
+- 1. Create a qubit, render up and down arrows in the sphere
+- 2. Measure it (render percentage of up and down of qubit state)
+- Bonus
+- 0. Use number of pokemon as range of numbers to make the calculation, and mapping of the sphere
+- 1. Percentage of capture of Pokemon is based on ultra-ball full-health, make
+- 2. Apply calculation by health status of Pokemon
+- 3. Add plasma effect
+
 ## Available Scripts
 
 In the project directory, you can run:
