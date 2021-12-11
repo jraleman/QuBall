@@ -15,9 +15,10 @@ const BlochState = () => {
         initBlochState();
     }, []);
 
+    const icon = blochState === INITIAL_STATUS ? '⬇' : '⬆' ;
     return (
         <div>
-            {blochState}
+            {icon}
         </div>
     );
 };
