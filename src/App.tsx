@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import circle from './assets/circle.png';
 import './App.css';
 
 const INITIAL_STATUS = 'DOWN';
@@ -17,7 +17,7 @@ const BlochState = () => {
 
     const icon = blochState === INITIAL_STATUS ? '⬇' : '⬆' ;
     return (
-        <div>
+        <div className="App-logo">
             {icon}
         </div>
     );
@@ -26,10 +26,7 @@ const BlochState = () => {
 const App = () => ((
     <div className="App">
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-                Edit <code>src/App.tsx</code> and save to reload.
-            </p>
+            <img src={circle} alt="logo" style={{ position: 'absolute' }} />
             <BlochState />
         </header>
     </div>
