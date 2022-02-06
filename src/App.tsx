@@ -1,27 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import circle from './assets/circle.png';
-import './App.css';
-
-const INITIAL_STATUS = 'DOWN';
-
-const BlochState = () => {
-    const [blochState, setBlochState] = useState<string|null>(null);
-
-    const initBlochState = () => {
-        setBlochState(INITIAL_STATUS);
-    };
-
-    useEffect(() => {
-        initBlochState();
-    }, []);
-
-    const icon = blochState === INITIAL_STATUS ? '⬇' : '⬆' ;
-    return (
-        <div className="App-logo">
-            {icon}
-        </div>
-    );
-};
+import BlochState from './components/BlochState';
 
 const App = () => ((
     <div className="App">
